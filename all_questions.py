@@ -46,14 +46,14 @@ def question3():
     answers = {}
 
     # string "yes" or "no"
-    answers["(a)"] = "no"
+    answers["(a)"] = "yes"
     answers["(b)"] = "no"
-    answers["(c)"] = "yes"
+    answers["(c)"] = "no"
 
     # explain-string: explanation in english prose
-    answers["(a) example"] = "A warm-blooded aerial species might fulfill both R1 and R3, therefore they are not mutually exclusive."
+    answers["(a) example"] = "Because each rule specifies a distinct set of qualities that do not overlap with the others, the rules are mutually exclusive."
     answers["(b) example"] = "Vertebrates with mixed features or amphibians are not covered by the rules, which are not exhaustive."
-    answers["(c) example"] = "A vertebrate could be incorrectly classified if a less suitable rule was applied before the ordering, which is why it is important."
+    answers["(c) example"] = "Since each rule is activated by a unique combination of attribute values and the rules are mutually exclusive, there is no need to order them."
 
     return answers
 # -----------------------------------------------------------
@@ -105,7 +105,7 @@ def question8():
     answers["(d) Row 4"] = '-'
 
     # float between 0 and 1
-    answers["(d) Training error rate"] = 0.5
+    answers["(d) Training error rate"] = 0.25
 
     return answers
 
