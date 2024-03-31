@@ -136,46 +136,46 @@ def question10():
     answers["(a) P(C=1|-)"] = 0.2
 
     # type: explanatory string
-    answers["(a) P(A=1|+) explain your answer"] = "
+    answers["(a) P(A=1|+) explain your answer"] = "Feature A equals 1 in 3 of 5 positive examples, resulting in a probability of 60% (P(A=1∣+)."
   
     # type: float
     # note: R is the sample (A=1,B=1,C=1)
-    answers["(b) P(+|R)"] = None 
-    answers["(b) P(R|+)"] = None
-    answers["(b) P(R|-)"] = None
+    answers["(b) P(+|R)"] = 0.857
+    answers["(b) P(R|+)"] = 0.192
+    answers["(b) P(R|-)"] = 0.032
 
     # string, '+' or '-'
-    answers["(b) class label"] = None
+    answers["(b) class label"] = '+'
 
     # explain_string
-    answers["(b) Explain your reasoning"] = None
+    answers["(b) Explain your reasoning"] = "The test sample (R) has a higher likelihood of belonging to the positive class ('+') with a posterior probability of 0.857 (P(R∣+)=0.192 vs. P(R∣−)=0.032)."
   
     # float
-    answers["(c) P(A=1)"] = None
-    answers["(c) P(B=1)"] = None
-    answers["(c) P(A=1,B=1)"] = None
+    answers["(c) P(A=1)"] = 0.5
+    answers["(c) P(B=1)"] = 0.4
+    answers["(c) P(A=1,B=1)"] = 0.2
 
     # type: string, 'yes' or 'no'
-    answers["(c) A independent of B?"] = None
+    answers["(c) A independent of B?"] = "yes"
   
     # type: float
-    answers["(d) P(A=1)"] = None
-    answers["(d) P(B=0)"] = None
-    answers["(d) P(A=1,B=0)"] = None
+    answers["(d) P(A=1)"] = 0.5
+    answers["(d) P(B=0)"] = 0.6  
+    answers["(d) P(A=1,B=0)"] = 0.55
 
     # type: string: 'yes' or 'no'
-    answers["(d) A independent of B?"] = None
+    answers["(d) A independent of B?"] = "yes"
   
     # type: float
-    answers["(e) P(A=1,B=1|+)"] = None
-    answers["(e) P(A=1|+)"] = None
-    answers["(e) P(B=1|+)"] = None
+    answers["(e) P(A=1,B=1|+)"] = 0.4
+    answers["(e) P(A=1|+)"] = 0.6
+    answers["(e) P(B=1|+)"] = 0.5
 
     # type: string: 'yes' or 'no'
-    answers["(e) A independent of B given class +?"] = None
+    answers["(e) A independent of B given class +?"] = "yes"
 
     # type: explanatory string
-    answers["(e) A and B conditionally independent given class +, explain"] =  None
+    answers["(e) A and B conditionally independent given class +, explain"] =  "Given the class, Naive Bayes assumes features are conditionally independent."
   
     return answers
 # --------------------------------------------------------
